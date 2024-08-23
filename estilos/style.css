@@ -1,0 +1,168 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+#background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../xoe15.jpg");
+    background-size: cover;
+}
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#hotbar-background{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    z-index: 2;
+    position: absolute;
+    width: 70px;
+    height: 85vh;
+    background-color: rgb(34, 34, 34);
+    z-index: 2;
+    border-radius: 0px 10px 10px 0px;
+}
+#hotbar-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+    z-index: 2;
+    width: 70px;
+    height: 85vh;
+}
+
+
+
+#hotbar-content>ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 25, 26);
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.05s ease;
+}
+
+#hotbar-content>ul>li:hover{
+    transform: scale(1.09);
+}
+
+#hotbar-content>ul>li:active{
+    transform: scale(0.9);
+}
+
+.window{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(203, 126, 255);
+}
+
+#settings{
+    display: none;
+}
+
+.window-header{
+    display: flex;
+    position: absolute;
+    padding: 0px 5px;
+    width: 590px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-header>span{
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+}
+
+.btn-close{
+    background-color: rgb(196, 0, 0);
+    border: none;
+    padding: -5px;
+    width: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.window-content-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-content{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 590px;
+    height: 360px;
+    background-color: white;
+    color: black;
+}
+
+#apply-btn{
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+#control-options{
+    margin: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    width: 10vw;
+    border-right: 1px solid rgb(163, 163, 163);
+    overflow-y: auto;
+    scrollbar-width: none;
+
+}
+
+#controls{
+    margin: 20px;
+    font-size: 15px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+} 
+
+#control-options li{
+    list-style: none;
+}
+
+#control-options button{
+    background-color: transparent;
+    border: none;
+}
+
+

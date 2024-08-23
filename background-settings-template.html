@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        span{
+            font-size: 18px;
+        }
+
+        input[type="color"]{
+            border: 0.5px solid black;
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        input[type="url"]{
+            margin-top: 20px;
+        }
+
+        label{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 20px 0px;
+        }
+
+        hr{
+            margin: 20px 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <span>Hotbar background color</span>
+
+    <label for="hotbar-color">
+        hotbar color: 
+
+        <input type="color" name="hotbar-color" id="hotbar-color">
+    </label>
+
+    <hr>
+
+    <span>Hotbar opacity</span>
+
+    <label for="hotbar-opacity">
+        <input type="range" name="hotbar-opacity" id="hotbar-opacity" min="0" max="100" value="100" >
+    </label>
+
+    <hr>
+
+    <span>Hotbar border</span>
+
+    <label for="show-border">
+        show border: 
+        <input type="checkbox" name="show-border" id="show-border">
+    </label>
+
+    <label for="border-thickness">
+        border-thickeness: 
+        <input type="range" name="border-thickeness" id="border-thickeness" min="1" max="10" value="1">
+    </label>
+
+    <label for="border-color">
+        border color: 
+        <input type="color" name="border-color" id="border-color">
+    </label>
+
+    <label for="border-type">
+        border-type: 
+        <select name="border-type" id="border-type">
+            <option value="dashed">dashed</option>
+            <option value="dotted">dotted</option>
+            <option value="double">double</option>
+            <option value="groove">groove</option>
+            <option value="outset">outset</option>
+            <option value="inset">inset</option>
+            <option value="ridge">ridge</option>
+            <option value="solid">solid</option>
+        </select>
+    </label>
+
+    <script>
+    </script>
+    
+</body>
+</html>
