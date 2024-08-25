@@ -11,32 +11,25 @@
 
     <script>
 
-        const tag = document.createElement('script')
+        let tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
-        const firstScriptTag = document.getElementsByTagName('script')[0]
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
 
+
+        let control = document.getElementsByTagName('script')[0];
+
+        control.parentNode.insertBefore(tag, control);
+
+        let player; 
         function onYouTubeIframeAPIReady(){
-            new YT.Player('player', {
-                height: '390',
+            player = new YT.Player('player', {
+                height: '360',
                 width: '640',
-                videoId: '248N-JyevJE?si=ySlfdYq77KcelfLU',
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                }
-            })
-        }
-
-        function onPlayerReady(event){
-            event.target.playVideo()
-        }
-
-        function onPlayerStateChange(event){
-
+                videoId: 'g8sQqs5ExyM'
+            });
         }
 
     </script>
+
     
 </body>
 </html>
