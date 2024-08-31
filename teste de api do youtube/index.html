@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <script>
 
         let tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
+        tag.src = "https://www.youtube.com/player_api";
 
 
         let control = document.getElementsByTagName('script')[0];
@@ -20,11 +21,14 @@
         control.parentNode.insertBefore(tag, control);
 
         let player; 
-        function onYouTubeIframeAPIReady(){
+        function onYouTubePlayerAPIReady(){
             player = new YT.Player('player', {
-                height: '360',
-                width: '640',
-                videoId: 'g8sQqs5ExyM'
+                height: '360px',
+                width: '640px',
+                videoId: 'ef9spDIleU4',
+                playerVars: {
+                    'autoplay': 1
+                }
             });
         }
 
