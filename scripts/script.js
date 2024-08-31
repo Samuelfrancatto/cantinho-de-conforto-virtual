@@ -21,23 +21,42 @@ navLinks.forEach(link => {
     })
 })
 
+const btnMusicPlayer = document.getElementById("btn-music-player")
+const btnCloseMusicPlayer = document.getElementById("btn-close-music-player")
 const btnSettings = document.getElementById("btn-settings")
-const btnClose = document.getElementById("btn-close")
+const btnCloseSettings = document.getElementById("btn-close-settings")
+
+musicPlayer = document.getElementById("musicPlayer")
+musicPlayerIsOpened = false
 
 settings = document.getElementById("settings")
-isOpened = false
+settingsIsOpened = false
 
-btnSettings.addEventListener("click", function(){
-    if (!isOpened){
-        settings.style.display = "flex"
-        isOpened = true
+btnMusicPlayer.addEventListener("click", function(){
+    if (!musicPlayerIsOpened){
+        musicPlayer.style.display = "flex"
+        musicPlayerIsOpened = true
     }
 })
 
-btnClose.addEventListener("click", function(){
-    if (isOpened){
+btnCloseMusicPlayer.addEventListener("click", function(){
+    if (musicPlayerIsOpened){
+        musicPlayer.style.display = "none"
+        musicPlayerIsOpened = false
+    }
+})
+
+btnSettings.addEventListener("click", function(){
+    if (!settingsIsOpened){
+        settings.style.display = "flex"
+        settingsIsOpened = true
+    }
+})
+
+btnCloseSettings.addEventListener("click", function(){
+    if (settingsIsOpened){
         settings.style.display = "none"
-        isOpened = false
+        settingsIsOpened = false
     }
 })
 

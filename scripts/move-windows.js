@@ -1,6 +1,7 @@
 
 
 dragElement(document.getElementById("settings"))
+dragElement(document.getElementById("musicPlayer"))
 
 function dragElement(element){
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0
