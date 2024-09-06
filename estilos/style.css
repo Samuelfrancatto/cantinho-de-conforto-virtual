@@ -66,6 +66,7 @@ html, body{
     height: 40px;
     border-radius: 10px;
     transition: transform 0.05s ease;
+    cursor: pointer;
 }
 
 #hotbar-content>ul>li:hover{
@@ -91,7 +92,7 @@ html, body{
 }
 
 #musicPlayer{
-    display: none;
+    /*display: none;*/
 }
 
 .window-header{
@@ -115,6 +116,7 @@ html, body{
     width: 30px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .window-content-container{
@@ -170,4 +172,40 @@ html, body{
     border: none;
 }
 
+#music-player-menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.window-menu ul li{
+    margin-right: 10px;
+    font-size: 15px;
+    padding-right: 3px;
+    cursor: pointer;
+}
+
+
+
+.window-menu ul{
+    position: absolute;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    width: 100%;
+}
+
+.menu-item-selected{
+    border-right: 1px solid rgb(141, 141, 141);
+    background-color: rgb(230, 230, 230);
+}
+
+#musicPlayer{
+    width: 300px;
+}
+
+#musicPlayerContent{
+    width: 290px;
+}
+
+#musicPlayerHeader{
+    width: 290px;
+}
 

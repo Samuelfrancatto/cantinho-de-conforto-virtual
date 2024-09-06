@@ -61,3 +61,30 @@ btnCloseSettings.addEventListener("click", function(){
 })
 
 
+const menuItems = document.querySelectorAll(".window-menu ul li")
+
+const menuItemsList = []
+
+menuItems.forEach(item => {
+    menuItemsList.push(item.textContent)
+})
+
+menuItems[0].classList.add('menu-item-selected')
+
+console.log(menuItemsList)
+
+menuItems.forEach((item, index) => {
+    item.addEventListener('click', function(){
+        console.log(index)
+
+        
+    })
+})
+
+menuItems.forEach((item) => {
+    item.addEventListener('click', function(){
+        menuItems.forEach((li) => li.classList.remove('menu-item-selected'))
+
+        item.classList.add('menu-item-selected')
+    })
+})
