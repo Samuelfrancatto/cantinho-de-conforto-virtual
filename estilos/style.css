@@ -190,6 +190,7 @@ html, body{
     position: absolute;
     border-bottom: 1px solid rgb(170, 170, 170);
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .menu-item-selected{
@@ -207,5 +208,9 @@ html, body{
 
 #musicPlayerHeader{
     width: 290px;
+}
+
+#mp-item-content{
+    margin-top: 20px;
 }
 
